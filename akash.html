@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATE TOTAL PERCENTAGE AND GRADE</title>
+
+<style>
+	body{
+		background-image: url("https://media.idownloadblog.com/wp-content/uploads/2015/06/amazing-ocean-sea-beach-afternoon-nature-34-iphone6-plus-wallpaper.jpg");
+		background-size: "cover";
+	}
+	h1{
+		color: black;
+		font-style: bold;
+	}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+	var a,b,c,d,e, sum,percentage;
+	a=prompt("enter marks of first subject");
+	b=prompt("enter marks of second subject");
+	c=prompt("enter marks pf third subject");
+	d=prompt("enter marks of fourth subject");
+	e=prompt("enter marks of fifth subject");
+	var sum = parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e);
+	document.write("The sum is= "+" <br>"+sum+"</br>");
+	 var percentage =(sum/500)*100;
+	document.write("The percentage is="+"<br>"+percentage+"</br>");
+	if(percentage>90 && percentage<=100)
+	{
+		document.write("Grade : A");
+	}
+	else if (percentage>80 && percentage <=90)
+	{
+		document.write("Grade : B");
+	}
+	else if (percentage>70 && percentage<=80)
+	{
+		document.write("Grade : C");
+	}
+	else if (percentage>60 && percentage<=70)
+	{
+		document.write("Grade : D");
+	}
+	else if (percentage>50 && percentage<=60)
+	{
+		document.write("Grade : E");
+	}
+	else
+	{
+		document.write("YOU FAILED");
+	}
+
+
+</script>
+</body>
+</html>
